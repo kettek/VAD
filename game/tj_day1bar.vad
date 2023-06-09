@@ -1,0 +1,163 @@
+.data bar1
+.name The Bar
+.desc
+It is night. You approach a complex of mansions, separated by walls, joined to a beach on which a large rectangular building sits, walled in so as to protect it from rising tide and housing a raised courtyard from which you can hear the sounds of much mirth and merry.
+.dend
+.list
+.opt Approach sounds of mirth and merry
+	.desc
+	After walking the short distance to the raised courtyard and entering, you take note of the clientele.	
+	.dend
+.tpo
+.lend
+.if BAR_VISITED
+	.desc
+	It seems empty.
+	.dend
+.else
+	.desc
+	In a corner of the courtyard sit three noble men and a noble woman, all of which are laughing together. In another corner you see a very vibrant looking man, periodically looking around the room, manipulating a device you recognize as a tech mage's black box apparatus somewhat smaller than the one you keep in your room.	Behind a long table is a tall man pouring drinks from various large barrels stacked against the wall.
+	.dend
+.fi
+.list
+.loop
+  .if BARTENDER = 0
+  .opt Talk to bartender
+	.desc
+	Bartender: What can I do for ya?
+	.dend
+	.list
+	.opt "I'm here on business with the Jian Investigation Department."
+	  .desc
+	  You flash your Tech Mage identification.
+	  Bartender: What may I do for you, sir? A room for the night or perhaps something else?
+	  You: Where are the three noble houses residing at?
+	  Bartender: I'll draw you a map.	
+	  He reaches back and produces a scrap of paper upon which he marks with charcoal which mansions belong to which house.	 
+	  You make particular note of the location of House Gavia.
+	  .dend
+	  .clue map of mansions
+	  .set BARTENDER
+	.tpo
+	.lend
+  .tpo
+  .fi
+  .if TECHMAGE = 0
+  .opt Talk to Tech Mage
+	  .desc
+	  The Tech Mage glances up at you with a smile.	 You suppose you have never seen a Tech Mage look so appealing in visage. His bearing betrays a great confidence and energy.   
+	  Tech Mage: What can I do for you, fellow practitioner of the art? 
+	  .dend
+	  .set TECHMAGE
+	  .list
+	  .opt "I am investigating the recent murders."
+		.desc
+		Tech Mage: Ah yes, the vampire killings. It is said they were committed by some kind of apparition. I heard the Church has sent an investigator.  That wouldn't be you, would it?
+		.dend
+		.list
+		.opt "I am with the Jian Investigation Department."
+		  .desc
+		  Tech Mage: I take it you haven't concluded that supernatural forces are actually at work then?
+		  .dend
+		  .list
+		  .opt "No"
+			.desc
+			The Tech Mage chuckles.	 
+			Tech Mage: Of course not.  We Tech Mages recognize other means of activity without resorting first to explanation by demonic activity.	There is, however, an investigator from the Church, make no mistake.
+			.dend
+			.list
+			.opt "I know"
+			  .desc
+			  Tech Mage: You've met him then?
+			  .dend
+			  .list
+			  .opt "No"
+				.desc
+				Tech Mage: Interesting.	 I have not yet seen him about this area myself.  You know, this would be the perfect place to watch for victims.  
+				.dend
+				.list
+				.opt "Who are you?"
+				  .desc
+				  Tech Mage: Of course, you suspect me. Ha!	 I am merely an inquisitive sort like yourself and have a sense of deductive logic about.  And look, I have no fangs.
+				  He opens his mouth and reveals very normal looking, if not immaculate, canines.  
+				  Tech Mage: You're welcome to examine these closer, of course. I assure you they're real.	I am merely a Mage on vacation in the employ of House Gavia. I am too deeply troubled by these events and wish to know the answer.
+				  He laughs, tapping his canines.  
+				  .dend
+				.tpo
+				.lend
+				.list
+				.opt "Thank you."
+				  .desc
+				  The Tech Mage smiles and bows slightly.  
+				  .dend
+				.tpo
+				.lend
+			  .tpo
+			  .opt "Yes"
+				.desc
+				Tech Mage: Interesting.	 I have not yet seen him about this area.  You know, this would be the perfect place to watch for victims.	
+				.dend
+				.list
+				.opt "Who are you?"
+				  .desc
+				  Tech Mage: Of course, you suspect me. Ha!	 I am merely an inquisitive sort like yourself and have a sense of deductive logic about.  And look, I have no fangs.
+				  He opens his mouth and reveals very normal looking, if not immaculate, canines.  
+				  Tech Mage: You're welcome to examine these closer, of course. I assure you they're real.	I am merely a Mage on vacation in the employ of House Gavia. I am too deeply troubled by these events and wish to know the answer.
+				  He laughs, tapping his canines.  
+				  .dend
+				  .list
+				  .opt "Thank you."
+					.desc
+					The Tech Mage smiles and bows slightly.	 
+					You leave his table as he returns focus to his black box device.
+					.dend
+				  .tpo
+				  .lend
+				.tpo
+				.lend
+			  .tpo
+			  .lend
+			.tpo
+			.lend
+		  .tpo
+		  .lend
+		.tpo
+		.lend
+	  .tpo
+	  .lend
+  .tpo
+  .lend
+  .fi
+  .if PARTYGOERS = 0
+  .opt Talk to party goers
+	.desc
+	You try to get a word in edgewise but they seem much too focused on their petty epicurean distractions.
+	.dend
+	.set PARTYGOERS
+  .tpo
+  .fi
+  .if TECHMAGE & BARTENDER & PARTYGOERS
+  .opt Talk to bartender
+	.desc
+	Bartender: Would you like to retire now?
+	.dend
+	.list
+	.opt "No"
+	  .desc
+	  Bartender: Feel free to return when you do.
+	  .dend
+	.tpo
+	.opt "Yes"
+		.desc
+		The Bartender readies a room for you upstairs.  
+		Bartender: Sleep well.
+		.dend
+		.go tj_day2bar
+	.tpo
+	.lend
+  .tpo
+  .fi
+  .opt Leave Bar
+	.go tj_day1Gavia
+  .tpo
+.lend

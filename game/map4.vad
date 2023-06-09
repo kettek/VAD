@@ -1,0 +1,22 @@
+.data map4
+.set Helarctos
+.name Overmap
+.desc
+Choose your destination
+.dend
+.list
+  .opt Bar
+    .go bar1
+  .tpo
+  .opt House Gavia
+    .go tj_day2Gavia
+  .tpo
+  .opt House Roxell
+    .go tj_day2Roxell
+  .tpo
+  .if Helarctos
+  .opt House Helarctos
+    .go tj_day2Helarctos
+  .tpo
+  .fi
+.lend

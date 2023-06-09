@@ -1,0 +1,39 @@
+//=======Day 2 House Gavia
+.name House Gavia day 2
+.desc 
+You approach the mansion of House Gavia.
+.dend
+.if YIN = 0
+	.desc
+	You are admitted swiftly into the chamber room of Lord Yin.  The lord sits, his hand on his chin, an anxious look crossing his face now and then.
+	Lord Yin: Have you good news for me? 
+	.dend
+	.set YIN
+	.list
+		.opt "I have not found anything more."
+			.desc
+			Lord Yin: Alas, then I believe it to be House Helarctos.  Though Lord Tan bade me to tell no one, we are to meet tonight.  For his shaming concern with appearances, he is meeting me here in secret.  This insults me but I am desperate. I know you are a reputable sort so I know you will keep this secret between us.  I also need the help of someone I can trust.  
+			He pauses.  
+			Lord Yin: You may be no noble warrior, but I know that as an investigator you carry a restricted weapon and know how to use it.  Will you agree to be present tonight at the meeting?
+			.dend
+			.list
+				.opt "Yes"
+					.desc
+					Lord Yin: Then it is settled.  I fear the beast may appear as I have no children left any longer.  I am the last of my House and my son's attempt to make connection with House Roxell was a grave failure.  I still possess holdings however and am not done.  I will ensure that my line continues.  I will see you an hour before midnight. Meet me in the shed on the corner of the property.
+					.dend
+					.set YINTANMEETING
+					.go tj_map4
+				.tpo
+			.lend
+		.tpo
+	.lend	
+.else
+	.desc
+	Your business here is finished.
+	.dend
+	.list
+		.opt Leave
+		.go tj_map4
+		.tpo
+	.lend	
+.fi

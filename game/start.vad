@@ -1,0 +1,96 @@
+.data tj_constable
+.name Office of the Constable of Haitan Manzu
+.desc
+A weathered stone building stands before you, the roof of which is adorned by sturdy merlons of an older style.  Between every other pair of merlon stands a statue of a Shi, one of those great beasts kept in the imperial capital and found to some extent in the wild as dangerous predators.  Above the open portcullis hangs a banner of the Li Halan next to a symbol of a hand issuing from a cloud, grasping a pole tipped by a crescent-saber.  This is the Office of the Constable where the Constable awaits your presence.
+.dend
+.list
+.opt Enter portcullis
+	.desc
+	Passing first through a large room with guards milling about, mailed in chain armor and armed with short swords, you enter a great hall, the walls upon which hang various melee weapons.  Occasionally there are doorways to other rooms, but at the end of the hall is a large wooden door which you walk toward.
+	.dend
+	.list
+	.opt Enter large wooden door
+		.desc
+		As you enter the room you see seated before you a handsome man with a thick black beard wearing an ornate leather armor studded with emeralds set in iron studs.  He speaks.
+
+		Constable: Greetings, Investigator.  You have come at a most timely hour.  Brother Zhengdou of the Shi-Huo Order has been sent here as well by the Celestial Church.
+
+		Brother Zhengdou bows.
+		.dend
+		.desc
+		Brother Zhengdou: This city is held in the claws of demonic power.  
+		Constable:  It is good of you to come here, oh hand of wisdom.  May my ignorance be excused, but I do not see yet how this crime denotes the transgression of hungry spirits.
+ 
+		Brother Zhengdou: The nobles here have forgotten their filial duty and privilege the wasteful activities of pleasure over the sacred rites.  The balance of heaven has been disrupted.  I have been send to rectify this imbalance and find the evil plaguing the chosen of heaven.  For though the way has been forgotten, demonic activity must be extinguished.  
+			You agree, do you not, Investigator?
+		.dend
+		.list
+		.opt "Yes, of course, Brother."
+			.desc
+				Brother Zhengdou: It is good that you have come.  Perhaps heaven has decreed that your talents will serve our cause and bring order to this city.
+			.dend
+			.list
+			.opt "Indeed, Brother, I hope this is so."
+				.desc
+					Brother Zhengdou: Good. It is favorable when the myriad creatures walk in harmony. We shall cleanse these streets of evil and return piety to this wayward metropolis.  I am sure your work will fall righteously into this order.  Good day, good Constable, and good day, good Inspector.
+		
+					Brother Zhengdou bows and leaves the room.
+				.dend
+				.set BROTHER_GOOD
+			.tpo
+			.lend
+		.tpo
+		.opt "I do not."
+				.desc
+				Brother Zhengdou: The work of the demonic bureaucracy is behind all activities which seek to bring disharmony.  Do you doubt this?
+				.dend
+				.list
+					.opt "Never do I doubt the mandate of heaven."
+						.desc
+						Brother Zhengdou: Good.  Though you walk with vision shrouded by mortal darkness, the truth will be revealed unto you should you maintain the righteous path.  Where your work will fall in my mission to find this creature of evil remains yet to be seen, but should you follow the right path, I suspect we will both align to heaven's trajectory.
+						.dend
+						.list
+							.opt "Indeed, Brother, I hope this is so."
+								.desc
+								Brother Zhengdou: Good. It is favorable when the myriad creatures walk in harmony. We shall cleanse these streets of evil and return piety to this wayward metropolis.  I am sure your work will fall righteously into this order.  Good day, good Constable, and good day, good Inspector.
+								.dend
+								.set BROTHER_GOOD
+							.tpo
+						.lend
+					.tpo
+					.opt "I know not the work of heaven but I fail to see your department's relevancy here."
+					.desc
+						Brother Zhengdou: Our department will be, no doubt, all that is needed.  I'm afraid your work will be for naught.  This mission will require only the efforts of us who are directed by the mandate of heaven. Through sacred ritual and the guidance of the ancestors, we will cleanse these streets of evil and return piety to this wayward metropolis.  Good day, good Constable.  Good day, Inspector.
+
+						Brother Zhengdou bows and leaves the room.
+					.dend
+					.list
+						.opt continue...
+						.tpo
+					.lend
+					.clue murder site
+					.tpo
+				.lend
+			.tpo
+			.lend
+		.tpo
+		.lend
+	.tpo
+	.lend
+.tpo
+.lend
+.desc
+Constable: As you know, a series of murders have occurred, all targeting members of the noble class, particularly those from elsewhere, here on vacation.  The beaches of [city name] are said to be the most wonderful in all of the land and the weather here is welcoming this time of year.  Our inquisitor brother suspects the work of darker powers.  Me, I'm not so sure.  Noble houses are known to compete aggressively against other noble houses.  Vacation or no vacation, the unscrupulous and opportunistic will seek ways outside of the joust or questing to gain ascendancy over their opponents.  While summoning the attention of the Church through suggestion of occult activity seems the height of folly, I still am not convinced that other explanations prove unsatisfactory.  That's where you come in.  Tech-wizardly may reveal more than the methods of the theurgy or my noble class can muster.  
+.dend
+.list
+	.opt "Hmm"
+	.tpo
+.lend
+.desc
+Constable: That said, there are three houses currently on vacation here -- House Gavia, House Helarctos and House Roxell.  I'm not sure how you might question these, but their parties are staying the mansions on northeastern beach. You might also go to the murder site on the northwestern beach.  My men still have the building sequestered off, so it should be undisturbed for you to do your work.  Perhaps there are some clues your keen eye might reveal. 
+.dend
+.list
+	.opt "I shall go"
+	.tpo
+.lend
+.go tj_map

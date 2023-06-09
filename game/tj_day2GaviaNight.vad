@@ -1,0 +1,104 @@
+.name House Gavia night 2
+.if YINTANMEETING
+	.desc
+	You look at the time.  It is an hour before midnight. The guards admit you as you proceed to the shed.  You hear the sound of crickets chirping as you enter into the shed.  Seated are both lords and Lord Yin's tech mage, Master Martin, looking much less robust.  You are surprised to see him here.
+	You greet them.
+	Lord Yin: Greetings Investigator.
+	Lord Tan: I suppose you are our pawn tonight, investigator.  Lord Yin tells me you are here to play the hired muscle.  
+	He laughs.
+	.dend
+	.desc
+	Lord Tan: Good thing neither of us lords need muscle really but Lord Yin must really be cautious, being the last of his line. 
+	He chuckles again.  
+	Lord Yin: You insult me, lord Tan.  
+	Lord Tan: Take a joke, lord Yin.  I will help you to escape your predictament and restore your house.  We both resent House Helarctos' profiting from our misfortunes and slaying our children.
+	.dend
+	.desc
+	Lord Yin: What is it you propose?
+	Lord Tan: Let us bring the fight to him.  Strike fast before he can strike again.  Let us go with our swords to House Helarctos and reveal the truth.  
+	Lord Tan looks at you. 
+	Lord Tan: Will you be a good pawn, investigator?  Will you accompany us as we confront this fell creature?
+	.dend
+	.list
+		.opt "I think this plan is bad."
+			.desc
+			Lord Tan: I hardly think so!  We must act quickly before another life is lost.  Lord Yin, you know you're next.
+			Master Martin: I am sure it is the vile Lord Dai with dark arts learned from the Khamek.  Who else could it be?  
+			Lord Yin: I myself feel the investigator may have a point.  How do we know beyond pure conjecture? Do you have an alternative plan, Investigator?
+			.dend
+			.if MIDNIGHTGAVIA
+			.list
+				.opt "Master Martin, you suggested that we meet in an hour to await the appearance of the creature."
+					.desc
+					Master Martin: I did no such thing!
+					.dend
+					.list
+						.opt Yes, this morning in the bar, you requested I accompany you.
+							.desc 
+							Master Martin: I have never been to that bar. You seek to deceive...
+							Lord Yin: An investigator would not be so...
+							Lord Tan: Wait, I suspect foul play at work.  It is not unknown for dark magics to obfuscate and beguile.  Lord Yin, perhaps Lord Dai brings the fight to us expecting you to be caught unawares.  I think we might reformulate our strategy.  Let our inspector meet the interloper as planned and we will lie in wait, ready to spring our trap.
+							.dend
+							.set CONFRONTVAMPIRE1
+							.list
+								.opt Leave
+								.go tj_Midnight
+								.tpo
+							.lend	
+						.tpo
+						.opt "You are the Vampire."
+							.desc
+							Master Martin: You dare to accuse me, a long standing loyal retainer to Lord Yin?
+							He seems to reach for something in his bag.
+							.dend
+							.list
+								.opt Reach for your pulse revolver.
+									.desc
+									Master Martin sees your action and falls backward, dropping his bag, his hands in front of his face as a screams out in fear.
+									Lord Yin stands between you and his retainer.
+									Lord Yin: Wait!
+									.dend
+									.list
+										.opt Push Lord Yin out of the way.
+											.desc 
+											As you begin to push Lord Yin to the side, Lord Tan reacts, grabbing you, causing your revolver to fall to the ground as his superior noble build succeeds in preventing any further movement on your part.
+											Lord Yin: What in the hell are you doing?!  There are no vampires in this room.  
+											Master Martin: He seeks to confuse us.  We must continue on to confront Lord Dai.
+											.dend
+											.desc
+											Lord Tan: I agree it is so, but we must now ask whose pawn this investigator is.  Can we believe him and conclude that Lord Dai brings the fight to us or is he in the employ of Lord Dai and hopes to lead us into a trap? I suggest we take him with us and wait to see if the foul creature appears. Perhaps it will be Lord Dai himself.
+											Lord Tan restrains you as Master Martin puts a gag around your mouth.  You feel Lord Tan's steel blade pressing against your back.
+											Lord Tan: Try to alert Lord Dai and I will gut you.  Don't worry, Lord Yin, if the inspector's words prove true, I will do him no harm.
+											.dend
+											.set CONFRONTVAMPIRE2
+											.go tj_Midnight
+										.tpo
+										.opt Stand down
+											.desc 
+											Lord Yin: What reason do you have to accuse my retainer of such a thing?  
+											Master Martin: He works for Lord Dai no doubt!
+											Lord Tan: Wait, let us ask the investigator to explain himself. 
+											Lord Yin: Please do.
+											.dend
+											.list
+												.opt "This morning, I saw him in the bar and now he denies this encounter or to the plan he voiced to me."
+													.desc 
+													Master Martin: I have never been to that bar. You seek to deceive...
+													Lord Yin: An investigator would not be so...
+													Lord Tan: Wait, I suspect foul play at work.  It is not unknown for dark magics to obfuscate and beguile.  Lord Yin, perhaps Lord Dai brings the fight to us expecting you to be caught unawares.  I think we might reformulate our strategy.  Let our inspector meet the interloper as planned and we will lie in wait, ready to spring our trap.
+													.dend
+													.set CONFRONTVAMPIRE1
+													.go tj_Midnight
+												.tpo
+											.lend
+										.tpo
+									.lend
+								.tpo
+							.lend
+						.tpo
+					.lend
+				.tpo	
+			.lend
+		.tpo	
+	.lend
+.fi

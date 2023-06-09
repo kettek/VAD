@@ -1,0 +1,46 @@
+.name If test
+.list
+  .loop
+  .opt Set 'A' to TRUE
+    .set A
+  .tpo
+  .opt Set 'A' to FALSE
+    .set A 0
+  .tpo
+  .opt Set 'B' to TRUE
+    .set B
+  .tpo
+  .opt Set 'C' to TRUE
+    .set C
+  .tpo
+  .opt Check if 'A' is TRUE
+    .if A
+      .desc
+        'A' is TRUE
+      .dend
+      .list
+      .loop
+        .opt continue
+        .tpo
+        .opt break
+          .break
+        .tpo
+      .lend
+    .elif B
+      .desc
+        'A' is FALSE and 'B' is TRUE
+      .dend
+    .elif C
+      .desc
+        'A' is FALSE, 'B' is FALSE, and 'C' is TRUE
+      .dend
+    .else
+      .desc
+        'A', 'B', and 'C' are false
+      .dend
+    .fi
+  .tpo
+  .opt quit
+  .break
+  .tpo
+.lend

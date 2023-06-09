@@ -1,0 +1,23 @@
+.name wew
+.desc
+  test
+.dend
+.set A
+.set B
+.set C
+  .if A
+    .desc
+      A is true
+    .dend
+  .fi
+.list
+.loop
+  .if A & B
+    .opt Hi
+    .tpo
+  .fi
+  .if A
+    .opt Wew
+    .tpo
+  .fi
+.lend

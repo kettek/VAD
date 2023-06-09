@@ -1,0 +1,46 @@
+.name Test Map
+.desc
+  You stand atop the mountain.
+.dend
+.list
+  .loop
+  .opt Look
+    .desc
+      You gaze off into the sunset. How sublime.
+    .dend
+  .tpo
+  .opt Investigate a Babe
+    .desc
+      You step up to a Babe - her flocks are flowing. Perhaps she's the one?
+    .dend
+    .list
+      .loop
+      .opt Shyly walk away
+        .desc
+          Thinking better of it, you walk away. She probably wasn't your type anyway.
+        .dend
+        .break
+      .tpo
+      .opt Man up and talk
+        .desc
+          Mustering up as much strength as you can, you approach the Babe. However, as you get closer, she fades into the mist - a lonely man's mirage?
+        .dend
+      .tpo
+    .lend
+  .tpo
+  .opt Jump
+    .desc
+      As you leap off the mountain, you contemplate all that you've accomplished. Sadly, you finish contemplation well before you finally splat.
+    .dend
+      .break
+  .tpo
+  .opt Travel back down
+    .desc
+      As you make your way down, you trip on a rock and violently tumble to your death.
+    .dend
+    .break
+  .tpo
+.lend
+.desc
+  Well, I hope you're not dead.
+.dend

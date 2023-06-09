@@ -1,0 +1,20 @@
+.name Some land~
+.desc
+A fine land! :)
+
+Or, at least I think so.
+.dend
+.list
+  .opt Gaze
+  .desc
+    You gaze.
+
+    Okay
+  .dend
+  .tpo
+  .opt Don't Gaze
+  .desc
+    You don't gaze
+  .dend
+  .tpo
+.lend

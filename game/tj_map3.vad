@@ -1,0 +1,11 @@
+.data map3
+.name Overmap
+.desc
+Choose your destination
+.dend
+.list
+	.opt House Gavia's Mansion
+		.go tj_day1Gavia
+	.tpo
+.lend
+

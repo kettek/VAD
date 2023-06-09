@@ -1,0 +1,4 @@
+fifo.c/.h and string.c/.h were imported from another project - this is why
+they are different from VAD in both style and quality.
+
+This program is terrible :)

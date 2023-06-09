@@ -1,0 +1,10 @@
+.data map1
+.name Overmap
+.desc
+Choose your destination
+.dend
+.list
+	.opt Murder Site
+		.go tj_murdersite
+	.tpo
+.lend

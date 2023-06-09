@@ -1,0 +1,53 @@
+.name House Gavia Day 1
+.desc 
+You hear the sound of a nightengale as you approach House Gavia's mansion.  A high wall encircles it and the only enterance is a closed gate with two guards standing behind it.  You speak.
+.list
+.opt "I am with the Jian Investigation Unit. I wish to speak with the lord of your house."
+	.desc 
+	Guard: It is late but we understand your mission is of the gravest importance to our house.  You may enter.
+	The gates open with a loud creak and you proceed on to the house.  A short while later, you are sitting at a table with the Lord of the House.  He offers you a glass of expensive wine.
+	.dend
+	.list
+	.opt Drink the wine.
+		.desc 
+		Lord Yin: Ah you are well mannered for a Tech Mage.  Most of you avoid the stuff like it was poison. I understand this.  No one can outdrink a noble. We're made for fighting and the lavish life of sensuous experience. 
+		He laughs.  Then his face straightens and his eyes turn icy.  
+		Lord Yin: This vile thing killed my son.  You will slay it, will you not?
+		.dend
+		.list
+		.opt "Yes"
+			.desc 
+			Lord Yin: You are confident, this is good. You should talk to the Tech Mage in my employ.  He's been in my service many years and I trust him fully but his obvious inadequacies.
+			Enter, Master Martin.  
+			Master Martin: Yes, my lord? 
+			What appears to be the very same Tech Mage that you spoke with in the bar enters the room, glancing at you without recognition.  He seems less perfect somehow.
+			Lord Yin: This is the investigator, Martin.  He believes he can accomplish where you have failed. He laughs.
+			.dend
+			.desc
+			Master Martin: My lord, the loss of your son, the Prince Ran, is most painful. I believe I have a lead.  I know it must be that foul house Helarctos. Of course they would enter into a pact with dark powers.  I have spoken to the Inquisitor about it.
+			Lord Yin: And yet Helarctos maintains their alibi.  They were stayed in to observe the rites and mourne their own loss.  It cannot be them.  Why would they slay one of their own?
+			Master Martin: A mere ruse.  They have sacrified their least favored daughter so that they may rise above all others.  Now they sit free of accusation.  I believe I have convinced the Inquisitor of this.  He goes to House Helarctos soon, I know it.
+			Lord Yin: Fool! You see, Investigator, we need one such as yourself.  You department comes highly regarded.  Tell me. Who do you think did it?  Do you believe Helarctos is capable of such treachery?  
+			.dend
+			.list
+			.opt "No but I will question them."
+				.desc
+				Lord Yin: Then you do not know either!  Are there any competent Tech Mages?  Leave now.  I must observe the rites and mourn my son.  
+				.dend
+				.set MASTERMARTIN
+			.tpo
+			.lend
+		.tpo
+		.lend
+	.tpo
+	.lend
+.tpo
+.lend
+.desc
+It seems time to retire.  You head back to the bar, purchasing a room for the night and, as exhausion takes you, the night slips on with dreams of frightening aparitions and vampiric killers.  Then morning comes.
+.dend
+.list
+.opt continue...
+.tpo
+.lend
+.go tj_day2bar

@@ -1,0 +1,50 @@
+//=======Day 2 House Roxell
+.name Roxell Mansion
+.desc 
+You approach the Mansion of House Roxell.  
+.dend
+.if NOPAWN = 0
+	.desc
+	You show your ID to the guards who admit you quickly.
+	As you walk across the lawn, you note various statues.  Some of these you know to be of the finest and most expenive work in the imperial capital.  
+	Entering into the mansion, you soon gain an audience with Lord Tan, a tall, imposing man with a greying but opulently styled beard and long cascading locks of grey and brown.  
+	Lord Tan: Today I light the incenses to grieve the loss of a foolish daughter. 
+	.dend
+	.list
+		.opt "My condolences, Lord Tan."
+			.desc 
+			Lord Tan: House Gavia heaps their disfortune upon me. This foul creature becomes enriched with the superior blood of Roxell and our reputation is sullied. Lord Dai of Helarctos sits and gloats, biding his time to steal my place at the Emperor's table. With whom do you stand?
+			.dend
+			.list
+				.opt "No one."
+					.desc 
+					Lord Tan: Ah you feign neutrality.  There is no neutrality in the political game and all play, even the basest peasant if only a pawn, and most of us, even nobles, are pawns.  Whose pawn are you?
+					.dend
+					.list
+						.opt "I am no pawn"
+							.desc 
+							Lord Tan: Then you are delusional, inspector.  You will find yourself a pawn in this power play soon enough, make no mistake.  All pawns die, but some live a little longer for a new game to begin. We will see what kind of pawn you are. You may ask your questions.
+							.dend
+							.set NOPAWN
+							.list
+								.opt Leave
+								.go tj_map4
+								.tpo
+							.list
+						.tpo	
+					.lend
+				.tpo
+			.lend
+		.tpo
+		
+	.lend
+.else
+	.desc
+	There is nothing important here now.
+	.dend
+	.list
+		.opt Leave
+			.go tj_map4
+		.tpo
+	.lend	
+.fi	

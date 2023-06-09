@@ -1,0 +1,33 @@
+.name test
+.list
+.loop
+  .if TEST
+  .opt not 0
+    .desc
+      ewe
+    .dend
+  .tpo
+  .else
+  .opt 0
+    .desc
+      this is zero
+    .dend
+  .tpo
+  .fi
+  .opt 1
+    .desc
+      this is one
+    .dend
+  .tpo
+  .opt 2
+    .desc
+      this is two
+    .dend
+  .tpo
+  .opt 3
+    .desc
+      setting 0
+    .dend
+    .set TEST
+  .tpo
+.lend

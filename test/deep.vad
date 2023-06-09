@@ -1,0 +1,46 @@
+.name Deep!
+.desc
+Deepness!
+.dend
+.list
+.opt A
+  .desc
+  A's desc
+  .dend
+.tpo
+.opt B
+  .desc
+  B's desc
+  .dend
+  .list
+    .opt Ba
+      .desc
+      Ba's desc
+      .dend
+      .list
+      .opt Baa
+        .desc
+        Baa!
+        .dend
+      .tpo
+      .opt Bab
+        .desc
+        Bab!
+        .dend
+      .tpo
+      .lend
+    .tpo
+    .opt Bb
+      .desc
+      Bb's desc
+      .dend
+    .tpo
+  .lend
+  .desc
+    Post-B
+  .dend
+.tpo
+.lend
+.desc
+Outer end!
+.dend

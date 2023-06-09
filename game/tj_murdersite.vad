@@ -1,0 +1,37 @@
+.name Murder Site
+.desc
+You leave the enclosure of city buildings onto a large beach across which, sitting upon a cluster of rocks, is a smallish citadel.  
+.dend
+.if MURDERSITE_VISITED = 0
+.desc
+Large stone steps lead up from the sand onto the rocks and into the stone building.  It takes you about fifteen minutes to navigate the wind swept beach between various clusters of rock until, finally, you begin to walk up the stairway. As you near the top, a voice shouts out.
+
+Voice: Ho!  Who goes there?
+
+You: I am an Investigator with the Jian Investigation Department. I am here to survey the crime scene by permission of the Constable.
+
+Voice: Indeed, you are expected.  Enter.
+.dend
+.desc
+As you continue through a large gateway, a noble bearing the same symbol as that of the Constable's office steps forward.  
+
+Noble: Greetings. I am a deputy of the Constable's office.  Upon his orders we have protected the crime scene from disturbance.   It is good you are here.  Perhaps you can figure out what's going on.  The inquisitor was here not long ago but his incantations seemed to reveal nothing.  The body itself lays in the small courtyard beyond yonder northern doors facing the beach.  Shall we proceed?
+.dend
+.list
+.opt "Yes, let us proceed."
+	.desc
+	You walk through the open doors into a small courtyard, the walls of which are covered with green vines, speckled with small red and yellow flowers.  Leaning forward, sprawled, against a bench is a body.  As you approach, you note the unusually pallid skin.  Upon further investigation, you note two incisions on one side of the neck into the cartoid artery.
+	Otherwise the body seems undamaged and you note little signs of struggle.  Review of the scene reveals little else. 
+
+	The deputy steps forward.
+
+	Deputy: We've found nothing else.  It's as if the poor soul let his body be drained of all blood without a fight.  There's no marks or signs of trauma.  Nothing.  We've identified the body as that of a noble belonging to House Gavia.  We've spoken to House Gavia and they know of no reason for anyone to be against the young noble.  House Gavia hardly ranks among several of the other houses and their holdings are modest compared to other houses.  
+	.dend
+	.list
+	.opt "That will be all."
+		.go tj_map2
+	.tpo
+	.lend
+.tpo
+.lend
+.fi

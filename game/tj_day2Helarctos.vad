@@ -1,0 +1,59 @@
+.name Helarctos Mansion
+.desc
+You approach the Mansion of House Helarctos.
+.dend
+.if KHAMEK = 0
+	.set KHAMEK
+	.desc
+		You show your ID to the guards who admit you hesitantly. 
+		As you walk down the garden coridor you sense eyes upon you.  Looking up you see on a balcony above the maindoor where stands one of those creatures you have heard much about but have never seen for yourself.
+		
+		A Khamek.  It is almost froglike, crouched in a squat upon long, thickly muscular greenish brown legs, and about the height of a tall man.  It has four arms, the elbows of which are brought to rest on its sides, with four sets of large hands pressed together.  Three eyes look down at you, the middle of which seems to exert a penetrating gaze.
+	.dend
+	.desc
+		It looks upon you for a long three seconds, then rises and departs through an unseen doorway.  Taking a moment to regain your bearing, you understand the Inquisitor's aprehension at these creatures.
+	.dend
+	.desc
+	Walking across the hall you enter the mansion, proceeding through shorter hall, the walls of which are adorned with alien trinkets and decor.  On your way to the great door at the end of the hall you notice a strange sculpture carved into interlocking lines and swirles.  A single eyes seems to pear out of the tangle, almost possessing the same piercing, alien quality of the creature you saw outside.
+	.dend
+	.desc
+	A voice speaks, startling you.  The Lord of the House stands at the end of the hall, with long blonde hair and wearing simpler robes over leather armor, the great door now open.
+	Lord Dai: Welcome Investigator.  What brings you to my vacation house?
+	.dend
+	.list
+		.opt Have you heard about the murders?
+			.desc
+			Lord Dai: Ah yes, House Gavia's misfortune continues.  It is a shame to see such ill tidings fall upon anyone.  I relate, having recently lost a daughter to the creature. I suppose you are here to question me, then?  I'm afraid I know as little as you do.  That is what I told the good Inquisitor.  He practices the rites wrongly, you know.  
+			.dend
+			.list
+				.opt Does he?
+					.desc
+					Lord Dai: While I am no Theurg myself, I do know something of the mystic art.  Our Inquisitor seeks to exhalt the ancestors, some of them, and preserve the balance, for his Order.  But balance is of the whole not the part.  He is determined by powers external to him yet he does not know those powers. To look inward is to be free and to understand clearly is to know the oneness of all.
+					All.  Spirits, Ancestors or the myriad creatures. Noble, Tech Mage, Theurg, Peasant or Khamek. Again, I am no theurg but the balance is not known through complex catagories and mandates of purple robes nor the retribution of flameguns.  
+					.dend
+					.list
+						.opt Then what?
+							.desc
+							Lord Dai: I cannot tell it to you.  You must know it yourself. You must look with eyes unclouded by mandates and categories.  Only then will you know. 
+							Lord Dai reaches and touches the sculpture, looking upon the eye.  
+							Lord Dai: I apologize but I must go now.  A warrior's training should never be shurked.  I wish you fortune in your quest and that you may more clearly see the balance.
+							He departs back through the open door, shutting it and leaving you to depart.
+							.dend
+							.go tj_map4
+						.tpo
+					.lend
+				.tpo
+			.lend
+		.tpo
+	.lend
+.else
+	.desc
+	You have no business here.
+	.dend
+	.list
+		.opt Leave
+		.go tj_map4
+		.tpo
+	.lend	
+.fi
+

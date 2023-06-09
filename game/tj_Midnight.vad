@@ -1,0 +1,309 @@
+//=========Midnight Meeting=========
+.name Midnight Meeting
+.if CONFRONTVAMPIRE1
+	.desc 
+	You all proceed to meet the Vampire.  Your accompanying party tags along in the back, skulking with weapons drawn.  
+	You step out into the moonlight in front of the mansion.  You hear a voice.  It is the false Master Martin, looking as surprising vital as usual.
+	.dend
+	.desc
+	False Master Martin: Greetings, Inspector.  I see that come armed.  That is good.  We will catch this creature.  I suspect it is now inside the mansion.  If we are to save my Lord, we must hurry.
+	.dend
+	.list
+	.opt "Yes let us proceed."
+		.desc
+		You proceed into the building, leading the way. 
+		Once you are inside, false Master Martin walks up next to you.  
+		False Master Martin: Lord Yin should be in the yonder room.  You should go first.  I will watch behind you. 
+		He stands by the door with a small gun drawn.  
+		.dend
+		.list
+		.opt Turn around and confront him
+			.desc
+			You: I know you are the Vampire.
+			False Master Martin: What are you talking about?  The Vampire is here and we need to stop him.
+			You: I have spoken to the real Martin.
+			False Master Martin laughs.
+			False Master Martin: So you have figured it out.  I assume Lord Yin already knows and has his men surrounding us.  That matters not to me.
+			.dend
+			.desc
+			False Master Martin suddenly disappears leaving you to fire your revolver where he was standing a moment ago.  
+			A moment passes and you hear noises outside.
+			Wandering back to the door you are greeted by a horrific sight.  Lord Tan is thrown against a tree, sinking to his knees after the impact, a branch protruding from his chest.  
+			The real Master Martin lays mangled by the door.  Lord Yin swings his saber into thin air before being struck and falling backwards.  You can't seem to find the source of the violence no matter how you peer into the lawn.
+			However, you finally notice a dark shape hunched behind a bush not ten steps away.  
+			.dend
+			.list
+			.opt Fire revolver at shape.
+				.desc
+				You fire three shots into the bush, the third of which elicits a cry of pain. 
+				Voice: No! Stop, I surrender!
+				A form staggers out from the bush, revealing itself as a man, gaunt but quickly moving, hands held above his head. His wounds are egregious, virtue of your exploding shells.
+				.dend
+				.list
+				.opt "Who are you?"
+					.desc
+					Vampire: I am a Tech Mage like yourself.  Would you like to share immortality? 
+					You notice his eyes shift quickly behind you and back to you.
+					.dend
+					.list
+					.opt "Yes but how?"
+						.desc
+						Vampire: By drinking noble blood, of course!  
+						Suddenly, you feel strong hands grasp your neck and you are lifted into the air, dropping your revolver.  Struggle as you might, something has you, but not the Vampire.
+						Vampire: Alas, you shall never drink their blood and become as I.  You expect one of us, yet there are two. 
+						He laughs.
+						.dend
+						.desc
+						Vampire: I would not have accomplished this without my companion, Ankadu.  I simply don't have that kind of strength or the ability to affect perception, but we tech mages priviledge wit over brute force, as you know. Eternally power hungry, easily placated nobles with their petty dramas to do that for us.  Or desperate psions.
+						With the blood flow to your brain cut off by these strong hands and lacking the ability to breath, you soon black out.
+						You have died.
+						.dend
+						.die
+					.tpo
+					.opt Shoot his knees and turn around.
+						.desc
+						The Vampire cries out, his knees obliterated as he falls to the ground.  As you turn around a large shape moves quickly toward you, striking you as your gun fires off into its form. Your head flies backwards, pulling your body with it as you fall sprawling into the grass, blacking out for a moment.
+						.dend
+						.desc
+						When you reawaken, you see a large form sprawled out in front of you, human like yourself but very large and very muscular. He seems to not be able to take damage as well as the Vampire who sits now, bound by thick chains but no longer bleeding and seeming in better condition than you saw him before.  Lord Yin's guards stand pointing their halberds at the vampire.
+						Lord Yin: I see you did what I could not.  You managed to damage the creature that felled me and damage it you did.  But which is the vampire?
+						Lord Yin walks up to you, a large bruise on face, smiling crookedly.
+						.dend
+						.desc
+						Lord Yin: Tan will be ok, his wounds are not fatal, at least not for a noble. But this vampire seems to heal better than we do.  
+						Vampire: And I will not last much longer without more of your blood.  Alas, a night is all I have to live.  Though I have magnified the regenerative power of you nobles, I had not figured out how to produce your blood myself. You have slain my pet Ankadu and I will be soon to follow. Victory is yours.  
+						The end.
+						.dend
+						.win
+					.tpo
+					.lend
+				.tpo
+				.lend
+			.tpo
+			.lend
+		.tpo
+		.opt Shoot him with your revolver.
+			.desc
+			In a rapid move, you point your gun at him, firing quickly.  He seems to notice your movement before you can properly draw a bead on him, darting out of the way of your shots.  With a wave of his hand, your revolver is wrenched from your hands, falling uselessly into the grass.  
+			Next thing you know, you feel a sharp pain in your neck and your vision blurs. You slip to your knees, hearing the sounds of more gunfire. A unfamiliar voice cries out in pain.
+			You remain conscious but unable to move, laying on side.  You see Lord Yin's boots.  
+			.dend
+			.desc
+			Lord Yin: Master!
+			He swings at something standing nearby, but you get the impression that the fight is somewhat onesided. You begin to feel weaker as your blood leaves your body.
+			You have the distinct impression that something is attached to your neck but are powerless to move your arms to check.  Suddenly, you feel something rip away from your neck and the blood seems to rush out faster before you pass out.
+			You have died.
+			.dend
+			.die
+		.tpo
+		.lend
+	.tpo
+	.lend
+.elif CONFRONTVAMPIRE2
+	.desc
+	You all proceed to meet the vampire.  Lord Yin leads, holding his saber in front of him. Behind you is Lord Tan, holding his sword pointed to your back.  Master Martin follows behind Lord Yin, carrying your pulse revolver. 
+	As you near the front of the mansion, Lord Yin abruptly stops, motioning for you all to stop.  Peering out into the yard, you see the false Master Martin standing, waiting.  The real Master Martin stifles a cry.  
+	Lord Yin: Martin, you fool.  Hand me the revolver.  I will drop the fiend from here.
+	.dend
+	.desc
+	Master Martin walks over and hands the revolver to Lord Yin.  
+	Lord Yin aims the revolver toward the false Master Martin and fires.
+	The first shot seems to only graze him as he staggers to the left and then seems to disappear into thin air.  
+	Lord Tan: You fool.  We're done in now.  
+	You have a sensation of being struck from behind before you fall to the ground unconscious. 
+	.dend
+	.desc
+	When you awaken, the back of your head aches and you feel a little unsteady.  Touching it, you feel some blood.  Lord Tan must have struck you with the pommel of his sword.
+	Looking around you find your revolver laying in the grass nearby.   As you recover your bearings, you realize you can hear the sounds of combat.  
+	.dend
+	.list
+		.opt Head toward combat noises.
+			.desc
+			As you head around the building, you emerge near the front gate where Lord Yin's guards are locked into combat with a large, muscular man, missing one arm, but holding his own against the guards.  You see a few more guards laying about, motionless in the grass.
+			A voice whispers from your left.  
+			Lord Tan: Stop there, traitor.  We have slain your master.  The vampire is killed but his pet remains.  
+			Lord Tan brandishes his long sword in his right hand, leering toward you, seeming ready to cut you down.
+			.dend
+			.list
+				.opt "Wait!"
+					.desc
+					Your words are in vain as Lord Tan leaps forward, slicing your hand apart with a swing of his blade.  You revolver falls to the ground along with some of your fingers.  His next swing severs your head from your shoulders and sends it flying into the bushes onto an anthill.  Before the body is cleaned up, your head manages to feed the colony for a day. You of course have no idea this happens.
+					.dend
+					.die
+				.tpo	
+				.opt Fire your revolver at him.
+					.desc 
+					You fire quickly, your shot burrying itself in his shoulder and exploding into a bloody splatter of flesh and bone as you render his right arm useless.
+					Lord Tan cries out, grasping the bloodied, gaping hole in his shoulder as his sword falls to the ground.  
+					Leveling your revolver toward his forehead, you shout for him to stand down.
+					He complies.
+					.dend
+					.list
+						.opt "Where is Lord Yin?"
+							.desc
+							Lord Tan: All but dead.  The vampire fell easily when we found him, but his pet was only stunned by Lord Yin's shot.  We scattered when we saw that glancing blow.
+							Master Martin fell first, of course.  He's not so clever a Tech Mage as you.  Lord Yin and I were able to injure the beast together, severing its arm, but not before it had dealt Yin a severe blow. Eventually Yin's guards came around and have been fighting with it since.
+							It's tricky.  It seems to be able to teleport but that's simply a trick of the mind. It moves fast and if it sees you, it can make you think it isn't there anymore.  After it struck Yin, I fled back into the trees and found the vampire.  He's no warrior but his regenerative capacity far exceeds my own.
+							Fortunately, nothing lives once its head is severed from its shoulders.  I suppose you will escape with his pet and leave me dead.
+							.dend
+							.list
+								.opt "No, I never turned against you."
+									.desc
+									Lord Tan: I guess I'm the fool then.  You'd better take care of that creature since you have the revolver.  I don't think the guards will last much longer and my arm is useless for now.
+									.dend
+									.list
+										.opt "Stay here."
+											.desc
+											You proceed to the signs of combat and, seeing the final guard valiantly holding against the monster but obviously no longer able to see it, aim the revolver and fire at the vampire's pet.
+											The bullet lands in its head and explodes, leaving it with a bloodied stump of a neck as it falls to the ground, lifeless.  The guard stares open mouthed at the headless body, collapsing to his knees.
+											.dend
+											.win
+										.tpo
+									.lend
+								.opt
+							.lend
+						.tpo
+					.lend
+				.tpo
+			.lend
+		.tpo
+	.lend
+.else
+	.desc
+	You walk up to the gate and the guards immediately recognize you
+	Guards: It's funny, Lord Yin told us not to admit you again, yet his Tech Mage told us a short while ago to allow you in.  Since his Tech Mage gave us this command, we must obey, as Master Martin's word is Lord Yin's unless explicitely stated otherwise.  You may enter.
+	The gates open, allowing you to enter and you walk forward into the yard.  After a short walk you are about to reach the front door of the mansion when you hear a voice.
+	Tech Mage: Ah it is good to see you here.  Alas, I fear Lord Yin has departed and thus may be in danger elsewhere.  
+	.dend
+	.list
+		.opt "I believe he is headed to House Helarctos."
+			.desc
+			Tech Mage: Then we must go there immediately.  I will meet you there.	
+			A short journey later you arrive at House Helarctos.  You wait outside until finally the Tech Mage arrives.  He sees you and bids you step over to where he is.
+			Tech Mage: There's no way we can get in there this time of night.  The guards will not admit just anyone.  I am not even sure how Lord Yin might have entered.  
+			.dend
+			.list
+				.opt "I will get us in."
+					.desc
+					You walk over to the gate, addressing the guards.
+					Guard: Investigator.  It is late -- why do you call at such an hour?
+					.dend
+					.list
+						.opt "Were there any others tonight?"
+							.desc
+							Guard: There were not.  I will ask the lord if you might see him if it is important.
+							.dend
+							.list
+								.opt "It is a life and death situation."
+									.desc 
+									The guard departs for several minutes before returning and opening the gate.
+									Guard: You may enter.
+									You enter with the Tech Mage following behind you.  Eventually, you both reach the front of the mansion.  As you enter the open area, you see Lord Yin entering the front door which closes behind him.  
+									Tech Mage: There we are. We must go in after him.
+									.dend
+									.list
+										.opt "Yes."
+											.desc
+											You both follow Lord Yin, entering into the mansion after him.  As you do, you hear a voice inside.
+											Lord Dai: Lord Tan, Lord Yin, Brother Zhengdou.  To what do I owe the honor of your trespass? 
+											Brother Zhengdou: Foul vampire, we know your game. We have come to bring you to justice and exorcize the wicked spirits who empower you.  Give up now.			
+											The Tech Mage whispers to you: Produce your revolver, friend. I suggest you aim for the vampire, Lord Dai, and finish the act quickly!  But quick, I will open the door.
+											With a kick, he sends the door flying open, revealing to you Lord Dai standing, sinisterly, closest to you, surrounded by Lord Yin, Lord Tan, Brother Zhengdou and some other figure.
+											.dend
+											.list
+												.opt Fire revolver at Lord Dai.
+													.desc
+													Time strangely seems to slow down as you fire your revolver, watching Lord Dai bend forward, an explosion of blood erupting from his stomach as he falls forward. Your second shot causes his shoulder to explode as he crumples.  A third shot causes the head of his prone body to explode into a bloody mess.
+													Suddenly time speeds up as your vision seems to clear and Lord Yin seems to transform into Lord Dai.  You notice that the unidentied figure is the very Tech Mage who stood near you a second ago.
+													Brother Zhengdou cries out: We are betrayed! 
+													Lord Tan brandishes a sword, stepping into a defensive position with the Tech Mage who seems armed with a small crossbow. Brother Zhengdou weilds a metalic club, the sides of which features coils that flicker and crackle with energy.
+													The Tech Mage steps over the crumbled body you mangled with your revolver, letting a bolt fly from his crossbow. 
+													It lands next to you, emiting a terrible scream which causes you to stagger as you retreat back out the door, your ears ringing. 
+													.dend
+													.list
+														.opt Run around building.
+															.desc
+															You move quickly, almost falling down a few times until your mind finally clears and the ringing in your ears dies down.  You're not even sure what happened, but you get the feeling that everyone is out to get you now and you have no idea where the Tech Mage went or why he was in that room at the same time he stood next to you.
+															Continuing to run, you eventually come upon a strange creature.  Perched against the wall of the mansion, about eight feet up, it is froglike and has three eyes, six limbs, and a great mouth.  It's middle eye seems to piece into your soul, making you very uncomfortable.
+															.dend
+															.list
+																.opt Shoot it
+																	.desc
+																	You point your revolver upwards, still moving forward, letting a single shot fire off at the creature.  
+																	You miss and your bullet explodes in the wall, sending bits of brick flying about as the creature leaps off of the wall in front of you, forcing you to halt.
+																	.dend
+																		.opt Shoot it
+																			.desc
+																			You fire again, this time striking its leg which explodes in blood similar to your own.  The creature makes no sound as it leaps upon you, striking you with both of its arms.  
+																			You fall back from the force of the blows, pinned under its weight as it continues to strike you.  Eventually you black out from the continual barrage.
+																			You have died.
+																			.dend
+																			.die
+																		.tpo
+																	.lend
+																.tpo	
+															.lend
+														.tpo
+												
+												
+											
+														.opt Run back to gate.
+														.desc
+														You run back to the gate, greeted by the guards who have heard the gunshots and have returned to investigate.
+														Guard: Ho! What is happening?
+														.list
+															.opt "The Vampire is here!"
+																.desc
+																Guard: Quick! Lord Dai is in danger!
+																The Guards all begin running toward the mansion, brandishing halberts and rifles.
+																.dend
+																.list	
+																	.opt "Continue to retreat."
+																		.desc 
+																		You escape out of the mansion, knowing you will never be able to prove your innocence now. You collect all your belongings and leave the city, knowing it is only a matter of time before a warrent is put out for your arrest and investigators like yourself come looking as well as all manner of bounty hunters.
+																		.dend
+																		.desc
+																		After a few days when you stop to rest by a large rock, the Tech Mage you spoke to previously steps out of the darkness, smiling largely.  Knowing you were tricked before, you are sure he has come to tie up any loose ends in his plot.  You fire our revolver but to no avail as he seems to predict all your moves, stepping out of the way of each of your shots.
+																		Your revolver emptied, he laughs and throws you effortlessly against the rock. You fall to the ground, knocked senseless.  
+																		"Why?"
+																		He laughs again.
+																		Tech Mage: You played right into my master's plans. 
+																		.dend
+																		.desc
+																		At this he undergoes a transformation right as you watch, growing much taller and much more muscular.  His clothing seems to melt into his body, revealing a seven-foot tall, guant human form, completely hairless, with almost completely black eyes. 
+																		Strange creature: After you fled, Lord Tan and the Tech Mage I have cleverly disguised myself as succeeded in killing Lord Dai and a few of those Khamek creatures he keeps there.  I, of course, made short work of his guards with my master's help. My master, of course, is the vampire you people keep talking of.  Only, he is a Tech Mage like yourself and much more clever.  Your time is done.
+																		He lifts you effortlessly, grasping the sides of your heads with his large hands as he pulls you up, feet suspended in the air, and begins squeezing your skull.  You almost hear a popping noise as your brain implodes and you cease to exist.
+																		.dend
+																		.die
+																	.tpo
+																.lend
+															.tpo
+													.lend.lend
+												.tpo	
+											.lend
+										.tpo
+									.lend
+								.tpo	
+							.lend		
+						.tpo		
+						.list
+						.opt "Freeze!"
+							.desc
+							The party inside reacts quickly. The unidentified figure fires what appears to be a crossbow at you. (You wonder why you're having such trouble seeing him.) The bolt lands in the door post next to you, emitting a screaming noise that causes you to lose your bearings.  You double over in pain, almost falling to the floor as your revolver slips from your hand.
+							Lord Dai rushes forward, swinging his sword in an arc toward you as he cries: Foul vampire!  His sword connects, severing your arm from your shoulder, as Lord Tan also steps forward, thrusting his sword into you.  As you slump forward, blood gushing from your wounds, you see a large form rush into the room, lifting both Lord Dai and Lord Tan into the air and hurling them forward.  Brother Zhengdou strikes the unidentified figure who now looks very much like the Tech Mage you brought here. 
+							Lord Dai no longer looks like Lord Dai, but now as Lord Yin.  Lord Dai is now across the room, but looking directly at you very sympathetically and seemingly kind of sad.  This is the last thing you see.
+							.dend
+							.die
+						.tpo
+						.lend
+					.tpo
+					.lend
+				.tpo
+				.lend
+			.tpo
+			.lend
+		.tpo
+		.lend
+	.tpo
+	.lend
+.fi

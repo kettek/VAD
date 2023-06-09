@@ -1,0 +1,143 @@
+.name Bar Day 2
+.desc
+You awaken to the sun shining through your open window, speading its welcoming warmth across your body.  The smell of sea air is invigorating.  Vampires and otherworldly fiends seem far away from this beautiful reality.
+You look outside down into the courtyard.  The activity of yesterday seems muted.  
+.dend
+.set NO_BROTHER2
+.list
+.opt Go down to bar.
+	.desc
+	You walk down the stairs into the bar, set on purchasing a flagon of ale and an egg breakfast.  
+	.dend
+	.desc
+	As you enter the courtyard you recognize Brother Zhengdou and the Tech Mage you saw earlier.
+	.dend
+	.list
+	.loop
+	.if BARTENDER2 = 0
+		.opt Proceed on to the bartender.
+			.set BARTENDER2
+			.desc 
+			Bartender: What can I do for ye? 
+			.dend
+			.list
+			.opt "Eggs Benedict and a flagon"
+				.desc
+				Bartender: Start the morning off right, eh?  Shame really.  Another murder.
+				.dend
+				.list
+				.opt "Another murder?"
+					.desc
+					Bartender: Yes.  Two bodies.  A couple on the grounds of House Gavia.  Only this time, it is said one of the two is from another of the three houses.  I guess none of the houses are safe.
+					.dend
+					.list
+						.opt "That is horrific."
+							.desc
+							Bartender: Indeed.  Don't know which house the poor lass or lad is from.  I suppose the House elders weren't happy. No youth from Gavia could be seen as worthy of courtship.  Enjoy yer eggs.
+							.dend
+						.tpo
+					.lend
+				.tpo
+				.lend
+			.tpo
+			.lend
+		.tpo
+	.fi
+	.if NO_BROTHER2 & BROTHER_GOOD
+		.opt Say Hello to Brother Zhengdou
+			.desc
+			Brother Zhengdou: May heaven smile upon on you, brother.  I thought you might be staying in this inn.  I take it you have already heard about the murder last night?
+			.dend
+			.set NO_BROTHER2 0
+			.set BROTHER2
+			.list
+				.opt "No"
+					.desc
+					Brother Zhengdou: I am surprised, good investigator!  Early to rise is a faculty of the wise. Good health and wealth come to the industrious.  No matter.  This case has been most preturbing.  Two were killed last night.  One of House Gavia. The other of House Roxell. On the lots of House Gavia.  The youth have forgotten propriety and the rites in these dark times!  I have spoken to Master Martin.  He believes House Helarctos is to be blame.  Have you heard this?
+					.dend
+					.list
+					.opt "Yes"
+						.desc
+						Brother Zhengdou: What are your thoughts on the matter?  Do you suppose the Helarctos might have assasinated these good children of House Gavia and House Roxell?  I know not what foul knowledge Helarctos may have picked up from those shifty Khamek natives on the fronteir.  We know dark spiritual power holds its sway strongest in those dark primal regions.
+						.dend
+						.list
+						.opt "Perhaps"
+							.desc
+							Brother Zhengdou: You maintain a cautious hand in the absence of evidence.  That is good.  I am uncertain as well.  Truth be told, the spirits have so far been silent to my inquiry. I have been to House Helarctos and though the presence of those natives fills me with grave apprehension, my rites have not revealed any sinister powers there. 
+							He rises, dusting off his purple robes. 
+							Brother Zhengdou: I must return to my work.  I hope your material efforts today are more revealing than that which the spiritual has offered.
+							Brother Zhengdou bows and leaves.
+							.dend
+							.set Helarctos
+						.tpo
+						.lend
+					.tpo
+					.lend
+				.tpo
+			.lend
+		.tpo
+	.elif NO_BROTHER2
+		.opt Say Hello to Brother Zhengdou
+			.set BROTHER2
+			.set NO_BROTHER2 
+			.desc
+			Brother Zhengdou grunts at you.  
+			.dend
+			.list
+			.opt Sit at Brother Zhengdou's table.
+				.desc
+				Brother Zhengdou: Evil enshrouds this place, Inspector.  Noble house turns against noble house and the malicious spirits consume the living and insult the ancestors.  Your instrumentalism will profit you nothing.  In service of forces other than heaven, you are but a vessel open to the domination and work of these malicious forces.  
+				.dend
+			.tpo
+			.lend
+		.tpo
+	.fi
+	.if TECHMAGE2 = 0
+		.opt Say Hello to Tech Mage
+			.set TECHMAGE2
+			.desc
+			Tech Mage: Greetings, Investigator. 
+			He smiles largely, revealing his pristine white teeth.
+			Tech Mage: I suppose you have heard -- another murder.  Two in fact.  I am really at ends at what do.  I suppose you could help me?
+			.dend
+			.list
+			.opt "Yes"
+				.desc
+				Tech Mage: Meet me at midnight on the grounds of House Gavia.  I suspect the creature, if it is a creature, will strike again. Does this interest you?
+				.dend
+				.list
+				.opt "Yes"
+					.desc
+					Tech Mage: Then it is agreed.  I shall await your participation.  Bring whatever weapon it is your department has liscenced to you.
+					The Tech Mage rises and departs.
+					.dend
+					.set MIDNIGHTGAVIA
+				.tpo
+				.lend
+			.tpo
+			.opt "Who was murdered?"
+				.desc
+				Tech Mage: A lesser prince of my House Gavia and the daughter of Lord Tan of House Roxell. Will you help me?
+				.dend
+				.list
+				.opt "Yes"
+					.desc
+					Tech Mage: Then it is agreed.  I shall await your participation.  Bring whatever weapon it is your department has liscenced to you.
+					The Tech Mage rises and departs.
+					.dend
+					.set MIDNIGHTGAVIA
+					.clue House Roxell
+				.tpo
+				.lend
+			.tpo
+			.lend
+		.tpo
+	.fi
+	.if TECHMAGE2 & BARTENDER2 & BROTHER2
+		.opt Head out
+			.go tj_map4
+		.tpo
+	.fi
+	.lend
+.tpo
+.lend

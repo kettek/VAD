@@ -1,0 +1,11 @@
+.data map2
+.name Overmap
+.desc
+Choose your destination
+.dend
+.list
+	.opt Bar
+		.go tj_day1bar
+	.tpo
+.lend
+
